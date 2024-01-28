@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ender Client</title>
+    <link rel="shortcut icon" href="./assets/icon/ender.ico" type="image/x-icon"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5991870b6e.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/container.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <style>
+        .container {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+
+        .login-form__microsoft-button {
+        background-color: #0078D4; /* Microsoft Blue color */
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .login-form__microsoft-button:hover {
+        background-color: #005A9E; /* Darker shade on hover */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img class="loader__image" src="./assets/img/logo.png">
+    </div>
+
+    <div class="separate">
+        <header>
+            <nav class="navbar">
+                <a class="logo-link" href="./index.html">
+                    <div class="logo-container">
+                        <p class="logo-container__logo-text" href="/">Ender Client</p>
+                        <img class="logo-container__logo-image" src="./assets/img/logo.png" alt="logo">
+                    </div>
+                </a>
+                <div class="navbar__links">
+                    <ul>
+                        <li><a class="navbar__links-button" href="./index.html" data-link>Home</a></li>
+                        <li><a class="navbar__links-button" href="./download.html" data-link>Download</a></li>
+                        <li><a class="navbar__links-button" href="./features.html" data-link>Features</a></li>
+                        <li><a class="navbar__links-button" href="./developers.html" data-link>Developers</a></li>
+                        
+                        <div class="login">
+                            <a class="login__button" href="./login.html">Sign In</a>      
+                        </div>
+                    </ul>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </nav>
+        </header>
+
+    <div class="container">
+        <h1>Sign In</h1>
+        <!-- Remove the login form -->
+        <a class="login-form__microsoft-button" href="https://login.microsoftonline.com/{your-tenant-id}/oauth2/v2.0/authorize?client_id={your-client-id}&response_type=code&redirect_uri={your-redirect-uri}&response_mode=query&scope=user.read openid profile&state=12345&nonce=67890">Login with Microsoft</a>   
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">Copyright by Ender Client © 2024</p>
+        <div class="footer-links">
+            <a href="https://discord.gg/5Mww29D9kB" class="footer-links__link" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/Wizi8914/Amaterasu" class="footer-links__link" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Wizi20540539" class="footer-links__link" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="module" src="/static/js/views/AbstractView.js"></script>
+</body>
+</html>
