@@ -1,0 +1,69 @@
+.container {
+    height: auto;
+    width: 100vw;
+    overscroll-behavior-y: none;
+    overflow: auto;
+}
+
+.separate {
+    display: grid;
+    grid-template-rows: min-content;
+    height: 100vh;
+    width: 100vw;
+}
+
+.test {
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wip {
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(40 40 40);
+
+    &-text {
+        color: #fff;
+        grid-column: 2;
+        text-align: center;
+    }
+
+    &-links {
+        text-align: right;
+        margin-right: 10px;
+
+        &__link {
+            color: #fff;
+            margin-left: 3px;
+            margin-right: 3px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                color: rgb(172, 172, 172);
+            }
+        }
+    }
+}
+
